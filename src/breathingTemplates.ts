@@ -1,0 +1,41 @@
+
+
+export const breathingTemplates  = [
+  {
+name: "Deep Breathing",
+description: "Deep breathing is an easy way to relax and let your worries go. You can do it pretty much anywhere, and it only takes a few minutes. Also called belly breathing, diaphragmatic breathing, and abdominal breathing, it helps ease stress. It can also lower your blood pressure and relax tense muscles.",
+exercise: [4, 4, 6, 0,6],
+trackers: ["None","None"],
+color: "#C47ADA",
+},
+{name: "Continuous Breathing",
+description: "Continuous breathing is a technique used by singers and wind instrumentalists to help create a continuous and uninterrupted tone. The technique, which requires inhaling through the nose, allows you to maintain sound for long periods of time.",
+exercise: [4, 0, 4, 2,7],
+trackers: ["None","None"],
+color: "#90BAEE",
+},
+{name: "Box Breathing",
+description: "This technique can be beneficial to anyone, especially those who want to meditate or reduce stress. It's used by everyone from athletes to U.S. Navy SEALs, police officers, and nurses.",
+exercise: [4, 4, 4, 4,10],
+trackers: ["None","None"],
+color:"#75BAFA",
+},
+{name: "Equal Breathing",
+description: "This mindful technique involves inhaling for the same amount of time as exhaling. Making your breath smooth and steady can help bring about balance and equanimity.",
+exercise: [4, 0, 4, 0,4],
+trackers: ["None","None"],
+color:"#FBE66E",
+},
+{name: "4-7-8 Breathing",
+description: "This breathing pattern aims to reduce anxiety or help people get to sleep. Some practitioners claim that the method helps people get to sleep in 1 minute.",
+exercise: [4, 7, 8, 0,8],
+trackers: ["None","None"],
+color:"#F5B969"
+},
+{name: "Rhythmic Breathing",
+description: "Rhythmic breathing is a simple breathing technique for beginners. It can be practiced by person of any age or health condition as long as there is no difficulty in breathing.",
+exercise: [6, 3, 6, 3,9],
+trackers: ["None","None"],
+color:"#EDBD4A",
+}
+]
