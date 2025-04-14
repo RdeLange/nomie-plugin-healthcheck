@@ -39,11 +39,11 @@
   let PlugiAapiUrl = "https://cdn.jsdelivr.net/gh/open-nomie/plugins/bin/v1/nomie-plugin.js";
   async function onLoaded() {
     plugin = await new NomiePlugin({
-        name: "Nomie Breathe",
-        emoji: "🫁",
-        description: "Breathing Exercises Plugin",
+        name: "Nomie HealthCheck",
+        emoji: "🏥",
+        description: "HealthCheck Management Plugin",
         uses: ["createNote", "getLocation", "selectTrackables","getTrackable"],
-        version: "0.21",
+        version: "0.1",
         addToCaptureMenu: true,
         addToMoreMenu: true,
         addToWidgets: false,
