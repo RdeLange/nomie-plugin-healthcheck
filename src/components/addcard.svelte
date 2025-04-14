@@ -1,8 +1,9 @@
 <script>
-    import { createEventDispatcher } from 'svelte'; 
+import { createEventDispatcher } from 'svelte'; 
 import { OverflowMenu, OverflowMenuItem } from "carbon-components-svelte";
 import Add from "carbon-icons-svelte/lib/Add.svelte";
-import {widgetTemplates} from "../templates/widgetTemplates";
+import {breathingTemplates} from "../breathingTemplates";
+
 
 export let amountofcards = 3;
 let direction = "bottom";
@@ -14,16 +15,17 @@ else {direction = "bottom"}
 
 
 const dispatch = createEventDispatcher();
-
 </script>
 
-<div class="fast" style="background-color: grey; color:white;">
+<div class="breathing" style="background-color: grey; color:white;">
     <div class="actions">
     </div>
     <h3>
     <OverflowMenu icon={Add} direction={direction}>
 
-        {#each widgetTemplates as template }
+        <OverflowMenuItem text="Create Custom" on:click={()=>{dispatch("addnew")}}/>
+        <hr>
+        {#each breathingTemplates as template }
            <OverflowMenuItem text={template.name} on:click={()=>{dispatch("addbytemplate",{template})}}/>
         {/each}
         
@@ -32,8 +34,8 @@ const dispatch = createEventDispatcher();
     
 </div>
 
-  <style>
-   h3 {
+<style>
+    h3 {
         margin: 0;
         padding: 0;
 		font-size: 1.8em;
@@ -42,12 +44,12 @@ const dispatch = createEventDispatcher();
         align-items: center;
 	}
 
-    .fast {
+    .breathing {
         padding: 1rem;
         margin: 1rem;
         border: 0px solid #ececec;
         border-radius: .5rem;
-        width: 100%;
+        width: 15rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -59,9 +61,5 @@ const dispatch = createEventDispatcher();
         display: flex;
     }
 
-    :root {
-    --c: goldenrod;
-}
-
-
+    
 </style>
