@@ -1,4 +1,4 @@
-# 💬 Nomie Quotes Plugin 
+# 💬 Nomie Quotes Plugin
 
 The 💬Nomie Quotes Plugin is a plugin for Nomie6-oss.
 
